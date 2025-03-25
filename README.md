@@ -76,6 +76,13 @@
 This documentation is still under development, so developers are still looking for a solution on how to customize favicons.
 
 
+### NextJS Route API
+- NextJS is a file-based routing architecture. means you must create folder to make some API routes
+- Example: http://localhost:3000/api/user/3 i want this to return json
+- Create folder ```api``` in ```/src/app/``` folder
+- In folder ```api```, create folder ```user```, then create folder ```[id]```
+- Result folder is ```src/app/api/user/[id]/route.ts``` (route.ts is default name to create API Logic)
+- Create logic route in ```route.ts``` file
 
 
 ## NOTE
