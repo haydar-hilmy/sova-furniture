@@ -1,3 +1,4 @@
+import { MainSection } from "@/components/server/Section/MainSection";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -11,7 +12,7 @@ export default function Home() {
     <main>
       <article>
 
-        <section>
+        <MainSection variant="heroSection">
           <aside className="left">
             <h2 className="titleSection">Sova</h2>
             <p className="descSection">Explore our wide selection of stylish and comfortable sofas, designed to elevate your living space. From classic to contemporary styles, find the perfect centerpiece for your home and create a haven of relaxation and style.</p>
@@ -20,9 +21,9 @@ export default function Home() {
           <aside className="right">
             <Image width={350} height={100} src="/products/sofa1.png" alt="Sofa 1" />
           </aside>
-        </section>
+        </MainSection>
 
-        <section className="productSection" id="product">
+        <MainSection variant="productSection" id="product">
 
           <aside className="right">
             <h2 className="titleSection">Our Products</h2>
@@ -41,9 +42,9 @@ export default function Home() {
             </div>
           </aside>
 
-        </section>
+        </MainSection>
 
-        <section className="contactSection" id="contact">
+        <MainSection variant="contactSection" id="contact">
 
           <aside className="left">
             <h2 className="titleSection">Contact Us</h2>
@@ -57,7 +58,7 @@ export default function Home() {
             </div>
           </aside>
 
-        </section>
+        </MainSection>
 
       </article>
     </main>

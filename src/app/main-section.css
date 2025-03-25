@@ -1,0 +1,157 @@
+.titleSection{
+    font-size: 5.5rem;
+    margin: 0;
+    line-height: 90%;
+    font-family: 'Forum', serif !important;
+    letter-spacing: 0.17rem;
+}
+
+.descSection{
+    width: 100%;
+    line-height: 200%;
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.cta-btn{
+    background-color: #6528e0;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 16%);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+.cta-btn:hover{
+    background-color: #7a56c2;
+}
+
+section.heroSection{
+    height: 90vh !important;
+    overflow: none;
+    display: flex;
+    gap: 24px;
+}
+
+section.heroSection aside.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(closest-side at 50% 50%, rgba(76, 67, 128, 0.7), transparent);
+}
+section.heroSection aside.right img{
+    width: 70%;
+}
+
+section.heroSection aside.left{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+section.heroSection aside.left,
+section.heroSection aside.right,
+section.productSection aside.left,
+section.productSection aside.right
+{
+    flex: 1;
+}
+
+
+section.productSection{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+}
+
+section.productSection aside.left
+{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+section.productSection aside.right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+section.productSection aside.left .product-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex: 1;
+    gap: 16px;
+}
+section.productSection aside.left .product-wrap h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+}
+section.productSection aside.left .product-wrap img{
+    width: 70%;
+    height: auto;
+}
+
+
+
+section.contactSection{
+    display: flex;
+    gap: 24px;
+    height: 50vh;
+}
+
+section.contactSection .left,
+section.contactSection .right
+{
+    flex: 1;
+}
+
+section.contactSection .right .link-wrap{
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 24px;
+}
+section.contactSection .right .link-wrap a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: inherit;
+}
+section.contactSection .right .link-wrap a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 640px) {
+    header .logo-wrap{
+        display: none;
+    }
+
+    .titleSection{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section{
+        padding: 24px;
+        margin-bottom: 64px;
+    }
+    section.heroSection {
+        flex-direction: column;
+    }
+    section.productSection, section.contactSection{
+        flex-direction: column;
+        height: auto;
+        gap: 48px;
+    }
+}
