@@ -86,4 +86,3 @@ This documentation is still under development, so developers are still looking f
 
 
 ## NOTE
-- masih tahapan slicing dari [Sova](file:///D:/CODING%20PROJECT/LEARN/DICODING/Dasar%20Pemrograman%20Web%20-%20IDCAMP%202024/Tugas-Akhir/index.html)
