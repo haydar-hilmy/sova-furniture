@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 // Data dummy
 const users = [
@@ -6,8 +6,13 @@ const users = [
   { id: "2", name: "Minim Coding", role: "Tech Educator" },
 ];
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
-  const user = users.find((u) => u.id === params.id);
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> } // ⬅️ Gunakan Promise
+) {
+  const { id } = await params; // ⬅️ Await params untuk mendapatkan ID
+
+  const user = users.find((u) => u.id === id);
 
   if (!user) {
     return NextResponse.json({ message: "User not found" }, { status: 404 });
